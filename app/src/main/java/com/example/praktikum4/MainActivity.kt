@@ -7,8 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import com.example.praktikum4.ui.theme.ActivitasPertama
 import com.example.praktikum4.ui.theme.PRAKTIKUM4Theme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +18,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             PRAKTIKUM4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Text("Praktikum 4", modifier = Modifier.padding(innerPadding))
+                    ActivitasPertama(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
+                    )
                 }
             }
         }
