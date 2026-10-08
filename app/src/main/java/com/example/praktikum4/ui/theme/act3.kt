@@ -28,9 +28,10 @@ import androidx.compose.ui.unit.sp
 import com.example.praktikum4.R
 
 @Composable
-fun ActivitasPertama(modifier: Modifier) {
+fun ActivitasPertama(modifier: Modifier = Modifier) {
     Column(
-        modifier = Modifier.padding(top = 100.dp)
+        modifier = modifier
+            .padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
